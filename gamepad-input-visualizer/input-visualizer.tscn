@@ -1,0 +1,348 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://gamepad-input-visualizer/images/joypad_base.png" type="Texture" id=1]
+[ext_resource path="res://gamepad-input-visualizer/images/right_button_base.png" type="Texture" id=2]
+[ext_resource path="res://gamepad-input-visualizer/images/trigger.png" type="Texture" id=3]
+[ext_resource path="res://gamepad-input-visualizer/images/right_button_pressed2.png" type="Texture" id=4]
+[ext_resource path="res://gamepad-input-visualizer/images/trigger_pressed.png" type="Texture" id=5]
+[ext_resource path="res://gamepad-input-visualizer/images/arrows_base.png" type="Texture" id=6]
+[ext_resource path="res://gamepad-input-visualizer/images/arrows_pressed.png" type="Texture" id=7]
+[ext_resource path="res://gamepad-input-visualizer/images/left_stick.png" type="Texture" id=8]
+[ext_resource path="res://gamepad-input-visualizer/images/left_stick_pressed.png" type="Texture" id=9]
+[ext_resource path="res://gamepad-input-visualizer/scripts/input-visualizer.gd" type="Script" id=10]
+[ext_resource path="res://gamepad-input-visualizer/images/right_button_base2.png" type="Texture" id=11]
+
+[node name="GamePad0" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color( 0.231373, 0.313726, 0.407843, 1 )
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureButton" parent="TextureRect"]
+self_modulate = Color( 1, 0, 0, 1 )
+margin_right = 426.0
+margin_bottom = 366.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureButton" parent="TextureRect"]
+self_modulate = Color( 0.0862745, 1, 0, 1 )
+margin_left = -27.0
+margin_top = 28.0
+margin_right = 399.0
+margin_bottom = 394.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="TextureButton" parent="TextureRect"]
+modulate = Color( 1, 0.815686, 0, 1 )
+margin_left = -26.0561
+margin_top = -26.0
+margin_right = 399.944
+margin_bottom = 340.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="TextureButton" parent="TextureRect"]
+self_modulate = Color( 0, 0.411765, 1, 1 )
+margin_left = -55.0
+margin_right = 371.0
+margin_bottom = 366.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RIGHT_STICK_BG" type="TextureButton" parent="TextureRect"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 143.071
+margin_top = 57.9487
+margin_right = 569.071
+margin_bottom = 423.949
+rect_scale = Vector2( 0.75, 0.75 )
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LEFT_STICK_BG" type="TextureButton" parent="TextureRect"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 43.9083
+margin_top = 57.9487
+margin_right = 469.908
+margin_bottom = 423.949
+rect_scale = Vector2( 0.75, 0.75 )
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8" type="TextureButton" parent="TextureRect"]
+margin_left = 3.0
+margin_top = 6.0
+margin_right = 429.0
+margin_bottom = 372.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9" type="TextureButton" parent="TextureRect"]
+anchor_left = 0.0022156
+anchor_right = 0.0022156
+margin_left = 101.056
+margin_top = 6.0
+margin_right = 527.056
+margin_bottom = 372.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="TextureButton" parent="TextureRect"]
+self_modulate = Color( 0.560784, 0.560784, 0.560784, 1 )
+margin_left = 27.0
+margin_top = -10.0
+margin_right = 453.0
+margin_bottom = 356.0
+rect_scale = Vector2( 0.8, 1 )
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="TextureButton" parent="TextureRect"]
+margin_right = 426.0
+margin_bottom = 366.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="7" type="TextureButton" parent="TextureRect"]
+self_modulate = Color( 0.619608, 0.619608, 0.619608, 1 )
+margin_left = 174.0
+margin_top = -10.0
+margin_right = 600.0
+margin_bottom = 356.0
+rect_scale = Vector2( 0.8, 1 )
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="TextureButton" parent="TextureRect"]
+margin_left = 149.0
+margin_right = 575.0
+margin_bottom = 366.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="13" type="TextureButton" parent="TextureRect"]
+anchor_left = 0.0022156
+anchor_right = 0.0022156
+margin_left = 22.9558
+margin_top = -3.15909
+margin_right = 448.956
+margin_bottom = 362.841
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="12" type="TextureButton" parent="TextureRect"]
+anchor_left = 0.0022156
+anchor_right = 0.0022156
+margin_left = 22.9558
+margin_top = -44.1591
+margin_right = 448.956
+margin_bottom = 321.841
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="14" type="TextureButton" parent="TextureRect"]
+anchor_left = 0.0022156
+anchor_right = 0.0022156
+margin_left = 273.179
+margin_top = 22.4308
+margin_right = 699.179
+margin_bottom = 388.431
+rect_rotation = 90.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="15" type="TextureButton" parent="TextureRect"]
+anchor_left = 0.0022156
+anchor_right = 0.0022156
+margin_left = 336.179
+margin_top = 22.4308
+margin_right = 762.179
+margin_bottom = 388.431
+rect_rotation = 90.0
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="10" type="TextureButton" parent="TextureRect"]
+modulate = Color( 0.490196, 0.490196, 0.490196, 1 )
+anchor_left = 0.0022156
+anchor_right = 0.0022156
+margin_left = 344.179
+margin_top = 38.4308
+margin_right = 770.179
+margin_bottom = 404.431
+rect_rotation = 90.0
+rect_scale = Vector2( 0.6, 0.9 )
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="11" type="TextureButton" parent="TextureRect"]
+modulate = Color( 0.490196, 0.490196, 0.490196, 1 )
+anchor_left = 0.0022156
+anchor_right = 0.0022156
+margin_left = 394.179
+margin_top = 38.4308
+margin_right = 820.179
+margin_bottom = 404.431
+rect_rotation = 90.0
+rect_scale = Vector2( 0.6, 0.9 )
+focus_mode = 0
+toggle_mode = true
+shortcut_in_tooltip = false
+button_mask = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControllerPopup" type="RichTextLabel" parent="."]
+margin_left = 118.266
+margin_top = 325.619
+margin_right = 295.266
+margin_bottom = 361.619
+rect_scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
