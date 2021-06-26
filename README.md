@@ -16,5 +16,7 @@ Interpolation Stick is the value used to interpolate the movements of the sticks
 ## TODO
 
 -Different methods for spawn, connect and disconnect devices in real time.
+<br><br>
 -Improve design and give some possibilities of design customization.
+<br><br>
 -Optimize for standalone use. 
