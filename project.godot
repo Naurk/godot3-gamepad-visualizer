@@ -15,6 +15,13 @@ config/description="Visualize input for joypad index"
 run/main_scene="res://Test-Scene.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/resizable=false
+window/size/always_on_top=true
+window/per_pixel_transparency/allowed=true
+window/per_pixel_transparency/enabled=true
+
 [input]
 
 move_right={
