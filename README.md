@@ -5,7 +5,7 @@ Basic inputs are associated to a joypad ID and showed on the respective gamepad 
 
 ## Using
 
-Like the main scene ("Test-Scene" in the project), just instance the gamepad scene ("gamepad-input-visualizer\input-visualizer") and associate it with an ID.
+Just instance the gamepad scene ("gamepad-input-visualizer\input-visualizer") in your scene (like the "Test-Scene") in the project) and associate it with an ID.
 You can change the ID in the Script Variables: 0 is the main controller connected.
 Device ID are treated as
 ```gdscript
