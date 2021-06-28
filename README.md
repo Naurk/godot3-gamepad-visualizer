@@ -1,5 +1,5 @@
 # Godot3 Gamepad Visualizer
-![joypad image](/godot3-gamepad-visualizer/gamepad-input-visualizer/images/joypad.png)
+![joypad image](/gamepad-input-visualizer/images/joypad.png)
 
 Just a simple gamepad/joypad visualizer fot Godot Engine 3.x.
 Basic inputs are associated to a joypad ID and showed on the respective gamepad representation.
